@@ -1,5 +1,5 @@
 import React from "react";
-import firebase from "../../firebase";
+//import firebase from "../../firebase";
 //import { connect } from "react-redux";
 //import { setColors } from "../../actions";
 
@@ -10,18 +10,18 @@ import {
   Divider,
   Button,
   Modal,
-  // Icon,
-  //Label,
-  //Segment,
+  Icon,
+  Label,
+  Segment,
 } from "semantic-ui-react";
 
 class ColorPanel extends React.Component {
   state = {
     modal: false,
-    //primary: "",
+    // primary: "",
     // secondary: "",
-    user: this.props.currentUser,
-    usersRef: firebase.database().ref("users"),
+    // user: this.props.currentUser,
+    // usersRef: firebase.database().ref("users"),
     // userColors: [],
   };
 
@@ -88,7 +88,7 @@ class ColorPanel extends React.Component {
   closeModal = () => this.setState({ modal: false });
 
   render() {
-    //   const { modal, primary, secondary, userColors } = this.state;
+    const { modal, primary, secondary, userColors } = this.state;
 
     return (
       <Sidebar
@@ -99,29 +99,29 @@ class ColorPanel extends React.Component {
         visible
         width="very thin"
       >
-        <Divider />
-        <Button icon="add" size="small" color="blue" />
-        {/* {this.displayUserColors(userColors)}
+        {/* <Divider />
+        <Button icon="add" size="small" color="blue" onClick={this.openModal} />
+        {this.displayUserColors(userColors)}
         color picker modal
         <Modal basic open={modal} onClose={this.closeModal}>
-          <Modal.Header>Choose App Colors</Modal.Header> 
-          {/* <Modal.Content>
-             <Segment inverted>
+          <Modal.Header>Choose App Colors</Modal.Header>
+            <Modal.Content>  */}
+        {/*<Segment inverted>
               <Label content="Primary Color" />
               <SliderPicker
                 color={primary}
                 onChange={this.handleChangePrimary}
               />
-            </Segment> */}
+            </Segment>
 
-        {/* <Segment inverted>
+            <Segment inverted>
               <Label content="Secondary Color" />
               <SliderPicker
                 color={secondary}
                 onChange={this.handleChangeSecondary}
               />
-            </Segment>
-          </Modal.Content> */}
+            </Segment>*/}
+        {/* </Modal.Content>  */}
         {/* <Modal.Actions>
             <Button color="green" inverted onClick={this.handleSaveColors}>
               <Icon name="checkmark" /> Save Colors
@@ -131,7 +131,7 @@ class ColorPanel extends React.Component {
               <Icon name="remove" /> Cancel
             </Button>
           </Modal.Actions> */}
-        {/* </Modal>  */}
+        {/* </Modal> */}
       </Sidebar>
     );
   }
