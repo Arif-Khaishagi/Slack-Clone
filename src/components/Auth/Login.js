@@ -64,7 +64,7 @@ class Login extends React.Component {
         <Grid.Column style={{ maxwidth: 450 }}>
           <Header as="h1" icon color="blue" textAlign="center">
             <Icon name="code branch" color="blue" />
-            Login for ArifChat
+            Login for SeeChat
           </Header>
           <Form onSubmit={this.handleSubmit} size="large">
             <Segment stacked>
