@@ -133,7 +133,7 @@ class UserPanel extends React.Component {
             {/*App Header */}
             <Header inverted floated="left" as="h2">
               <Icon name="code" />
-              <Header.Content>ARIFCHAT</Header.Content>
+              <Header.Content>SEECHAT</Header.Content>
             </Header>
 
             {/** User */}
